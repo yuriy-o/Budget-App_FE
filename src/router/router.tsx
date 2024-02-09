@@ -7,27 +7,27 @@ import Categories from '../pages/Categories.tsx';
 import Auth from '../pages/Auth.tsx';
 
 export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: 'transactions',
-        element: <Transactions />,
-      },
-      {
-        path: 'categories',
-        element: <Categories />,
-      },
-      {
-        path: 'auth',
-        element: <Auth />,
-      },
-    ],
-  },
+	{
+		path: '/',
+		element: <Layout />,
+		errorElement: <ErrorPage />,
+		children: [
+			{
+				index: true,
+				element: <Home />,
+			},
+			{
+				path: 'transactions',
+				element: <Transactions />,
+			},
+			{
+				path: 'categories',
+				element: <Categories />,
+			},
+			{
+				path: 'auth',
+				element: <Auth />,
+			},
+		],
+	},
 ]);
