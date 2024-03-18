@@ -7,8 +7,8 @@ import { login } from '../store/user/userSlice.ts';
 import { useNavigate } from 'react-router-dom';
 
 const Auth: FC = () => {
-	const [email, setEmail] = useState('');
-	const [password, setPassword] = useState('');
+	const [email, setEmail] = useState<string>('');
+	const [password, setPassword] = useState<string>('');
 	const [isLogin, setIsLogin] = useState<boolean>(false);
 	const dispatch = useAppDispatch();
 	const navigate = useNavigate();
